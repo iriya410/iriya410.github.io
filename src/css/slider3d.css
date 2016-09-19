@@ -1,0 +1,47 @@
+.slider3d_perspective {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: inherit;
+  perspective-origin: center;
+  overflow: hidden; }
+
+.slider3d_container {
+  order: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: inherit;
+  height: inherit;
+  perspective: inherit;
+  perspective-origin: inherit;
+  transition: all 0.4s; }
+
+.slider3d_btn_prev {
+  order: 0; }
+
+.slider3d_btn_next {
+  order: 2; }
+
+[class*="slider3d_btn_"] {
+  position: relative;
+  box-sizing: border-box;
+  margin: 0;
+  border: none;
+  padding: 0;
+  min-width: 10%;
+  padding-bottom: 10%;
+  background-color: transparent; }
+  [class*="slider3d_btn_"] svg {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); }
+    [class*="slider3d_btn_"] svg polyline {
+      fill: rgba(0, 0, 0, 0.3); }
+
+.slider3d_item {
+  position: absolute;
+  transition: all 0.4s; }
