@@ -1,4 +1,4 @@
-body, header h1, main h2, main .how_to h3 {
+body, header h1, main h2, main .how_to h3, main .option h3 {
   margin: 0;
   border: 0;
   padding: 0; }
@@ -137,6 +137,8 @@ main {
         width: 100%;
         max-width: 400px;
         height: auto; }
+        main .demo .demo-slider section img {
+          width: 100%; }
   main .how_to h3 {
     font-size: 1.5rem;
     line-height: 3rem; }
@@ -158,10 +160,11 @@ main {
       color: #FF6A00; }
     main .how_to ol .content {
       color: #404040; }
-  main .custom img {
-    width: 100%;
-    max-width: 1024px;
-    height: auto; }
+  main .option h3 {
+    font-size: 1.5rem;
+    line-height: 3rem; }
+  main .option table {
+    width: 100%; }
 
 footer {
   display: flex;

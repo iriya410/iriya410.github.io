@@ -109,7 +109,8 @@ main
 				width: 100%
 				max-width: 400px
 				height: auto
-				
+				img
+					width: 100%
 	.how_to
 		h3
 			@extend %reset_block
@@ -139,11 +140,14 @@ main
 			.content
 				color: #404040
 
-	.custom
-		img
+	.option
+		h3
+			@extend %reset_block
+			font-size: 1.5rem
+			line-height: 3rem
+
+		table
 			width: 100%
-			max-width: 1024px
-			height: auto
 
 footer
 	display: flex
