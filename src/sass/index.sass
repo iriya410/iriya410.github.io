@@ -58,6 +58,29 @@ main
 		font-size: 1.5rem
 		line-height: 4.5rem
 
+	.home
+		display: flex
+		justify-content: center
+		align-items: center
+		h2
+			@extend %rh
+		.logo
+			position: relative
+			width: 60%
+			padding-bottom: 50%
+			background: url("../asset/logo.png")
+			background-repeat: no-repeat
+			background-size: contain
+			background-position: center
+
+		.logo_paragraph
+			position: absolute
+			top: 50%
+			left: 50%
+			transform: translate(-50%, -50%)
+			span
+				font-size: 4.5rem
+
 	.demo
 		display: flex
 		flex-direction: column
@@ -76,7 +99,7 @@ main
 				width: 100%
 				max-width: 400px
 				height: auto
-
+				
 	.how_to
 		h3
 			@extend %reset_block
@@ -105,3 +128,12 @@ main
 				color: #FF6A00
 			.content
 				color: #404040
+
+	.custom
+		img
+			width: 100%
+			max-width: 1024px
+			height: auto
+
+footer
+	height: 20rem

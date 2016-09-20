@@ -13,6 +13,16 @@ ul {
   padding-left: 0;
   list-style: none; }
 
+main .home h2 {
+  overflow: hidden;
+  position: absolute;
+  clip: rect(0, 0, 0, 0);
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  width: 1px;
+  height: 1px; }
+
 html {
   font-size: 10px; }
   @media (min-width: 360px) and (max-width: 1279px) {
@@ -85,6 +95,25 @@ main {
   main h2 {
     font-size: 1.5rem;
     line-height: 4.5rem; }
+  main .home {
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    main .home .logo {
+      position: relative;
+      width: 60%;
+      padding-bottom: 50%;
+      background: url("../asset/logo.png");
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-position: center; }
+    main .home .logo_paragraph {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%); }
+      main .home .logo_paragraph span {
+        font-size: 4.5rem; }
   main .demo {
     display: flex;
     flex-direction: column;
@@ -121,3 +150,10 @@ main {
       color: #FF6A00; }
     main .how_to ol .content {
       color: #404040; }
+  main .custom img {
+    width: 100%;
+    max-width: 1024px;
+    height: auto; }
+
+footer {
+  height: 20rem; }

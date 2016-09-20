@@ -5,6 +5,7 @@
 		<meta charset="UTF-8">
 		<title>Slider 3D</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="shortcut icon" href="src/asset/fac.ico">
 
 		<link rel="stylesheet" type="text/css" href="src/css/index.css">
 
@@ -17,43 +18,57 @@
 			<h1>Slider 3D</h1>
 
 			<ul>
+				<li><a href="#home">Home</a></li>
 				<li><a href="#demo">Demo</a></li>
 				<li><a href="#how_to">How-To</a></li>
-				<li><a href="#custom">Custom</a></li>
 				<li><a href="#">Download</a></li>
 			</ul>
 		</header>
 
 		<main>
+			<article id="home" class="home">
+				<h2>Home</h2>
+				<div class="logo">
+					<div class="logo_paragraph">
+						<span>SLIDER 3D</span>
+						<a href="https://github.com/iriya410/iriya410.github.io">iriya410.github.io</a>
+					</div>
+				</div>
+			</article>
+
+			<hr>
+
 			<article id="demo" class="demo">
 				<h2>Demo</h2>
 				<div class="demo-slider">
 					<section>
-						<img src="http://placehold.it/800x600/FF7F7F/fff/?text=SLIDE 0" alt="alt" width="400">
+						<img src="src/asset/slide0.png" alt="demo slide 0" width="400">
 					</section>
 					<section>
-						<img src="http://placehold.it/800x600/FFE97F/fff/?text=SLIDE 1" alt="alt" width="400">
+						<img src="src/asset/slide1.png" alt="demo slide 1" width="400">
 					</section>
 					<section>
-						<img src="http://placehold.it/800x600/A5FF7F/fff/?text=SLIDE 2" alt="alt" width="400">
+						<img src="src/asset/slide2.png" alt="demo slide 2" width="400">
 					</section>
 					<section>
-						<img src="http://placehold.it/800x600/7FFFC5/fff/?text=SLIDE 3" alt="alt" width="400">
+						<img src="src/asset/slide3.png" alt="demo slide 3" width="400">
 					</section>
 					<section>
-						<img src="http://placehold.it/800x600/7FC9FF/fff/?text=SLIDE 4" alt="alt" width="400">
+						<img src="src/asset/slide4.png" alt="demo slide 4" width="400">
 					</section>
 					<section>
-						<img src="http://placehold.it/800x600/A17FFF/fff/?text=SLIDE 5" alt="alt" width="400">
+						<img src="src/asset/slide5.png" alt="demo slide 5" width="400">
 					</section>
 					<section>
-						<img src="http://placehold.it/800x600/D67FFF/fff/?text=SLIDE 6" alt="alt" width="400">
+						<img src="src/asset/slide6.png" alt="demo slide 6" width="400">
 					</section>
 					<section>
-						<img src="http://placehold.it/800x600/FF7FB6/fff/?text=SLIDE 7" alt="alt" width="400">
+						<img src="src/asset/slide7.png" alt="demo slide 7" width="400">
 					</section>
 				</div>
 			</article>
+
+			<hr>
 
 			<article id="how_to" class="how_to">
 				<h2>How To Use</h2>
@@ -95,19 +110,15 @@
 					</li>
 				</ul>
 			</article>
-
-			<article id="custom" class="custom">
-				<h2>Custom</h2>
-			</article>
 		</main>
 
 		<footer>
-			
+			<div></div>
 		</footer>
 
 		<script>
 			window.slider_test = new slider3d(".demo-slider");
-			window.slider_test.setAutoPlay(3000);
+			//window.slider_test.setAutoPlay(3000);
 		</script>
 
 		<script src="src/js/index.js"></script>
