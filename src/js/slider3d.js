@@ -126,7 +126,7 @@
 		// Axis function
 		//////////////////////////////////////////////////
 		initAxis(axis) {
-			this.axis = axis;
+			this.axis = axis || "Y";
 			if(this.axis !== "Y" && this.axis !== "X") {
 				return console.log("axis is only \"X\" | \"Y\"");
 			}
@@ -177,9 +177,9 @@
 		// Distance function
 		//////////////////////////////////////////////////
 		initDistance(dist) {
-			this.dist = dist || 1.0;
-			if(this.dist < 1.0 || this.dist > 2.0) {
-				return console.log("dist is only \"1.0 <= dist <= 2.0\"");
+			this.dist = dist || 1.2;
+			if(this.dist < 0.0 || this.dist > 2.0) {
+				return console.log("dist is only \"0.0 <= dist <= 2.0\"");
 			}
 			this.reverse_dist = 2.0 - this.dist;
 		}
