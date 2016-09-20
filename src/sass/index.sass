@@ -58,6 +58,9 @@ main
 		font-size: 1.5rem
 		line-height: 4.5rem
 
+	hr
+		border-color: #ffffff
+
 	.home
 		display: flex
 		justify-content: center
@@ -74,12 +77,19 @@ main
 			background-position: center
 
 		.logo_paragraph
+			display: flex
+			flex-direction: column
+			justify-content: center
+			align-items: center
 			position: absolute
 			top: 50%
 			left: 50%
 			transform: translate(-50%, -50%)
 			span
 				font-size: 4.5rem
+			a
+				align-self: flex-end
+
 
 	.demo
 		display: flex
@@ -136,4 +146,11 @@ main
 			height: auto
 
 footer
-	height: 20rem
+	display: flex
+	flex-direction: column
+	justify-content: center
+	align-items: center
+	height: 15rem
+
+	a
+		color: #7FC9FF

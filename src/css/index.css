@@ -95,6 +95,8 @@ main {
   main h2 {
     font-size: 1.5rem;
     line-height: 4.5rem; }
+  main hr {
+    border-color: #ffffff; }
   main .home {
     display: flex;
     justify-content: center;
@@ -108,12 +110,18 @@ main {
       background-size: contain;
       background-position: center; }
     main .home .logo_paragraph {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
       position: absolute;
       top: 50%;
       left: 50%;
       transform: translate(-50%, -50%); }
       main .home .logo_paragraph span {
         font-size: 4.5rem; }
+      main .home .logo_paragraph a {
+        align-self: flex-end; }
   main .demo {
     display: flex;
     flex-direction: column;
@@ -156,4 +164,10 @@ main {
     height: auto; }
 
 footer {
-  height: 20rem; }
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 15rem; }
+  footer a {
+    color: #7FC9FF; }
