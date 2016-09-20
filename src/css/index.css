@@ -1,4 +1,4 @@
-body, header h1, main h2, main .how_to h3, main .option h3 {
+body, header h1, main h2, main .how_to h3, main .doc h3 {
   margin: 0;
   border: 0;
   padding: 0; }
@@ -139,6 +139,32 @@ main {
         height: auto; }
         main .demo .demo-slider section img {
           width: 100%; }
+    main .demo .play {
+      border: none;
+      border-radius: 1rem;
+      padding: 1rem;
+      background: none;
+      color: #404040;
+      font-size: 2rem;
+      position: relative;
+      z-index: 0; }
+      main .demo .play::after {
+        content: "";
+        display: block;
+        visibility: hidden;
+        position: absolute;
+        top: 50%;
+        left: 0;
+        bottom: 50%;
+        right: 0;
+        z-index: -1;
+        background: #7FC9FF;
+        border-radius: inherit;
+        transition: all 0.3s; }
+      main .demo .play:hover::after {
+        visibility: visible;
+        top: 0;
+        bottom: 0; }
   main .how_to h3 {
     font-size: 1.5rem;
     line-height: 3rem; }
@@ -160,11 +186,12 @@ main {
       color: #FF6A00; }
     main .how_to ol .content {
       color: #404040; }
-  main .option h3 {
+  main .doc h3 {
     font-size: 1.5rem;
     line-height: 3rem; }
-  main .option table {
-    width: 100%; }
+  main .doc a {
+    margin-left: 2rem;
+    color: #7FC9FF; }
 
 footer {
   display: flex;

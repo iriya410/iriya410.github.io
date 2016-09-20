@@ -111,6 +111,15 @@ main
 				height: auto
 				img
 					width: 100%
+		.play
+			border: none
+			border-radius: 1rem
+			padding: 1rem
+			background: none
+			color: #404040
+			font-size: 2rem
+			+hover(hsio, background, #7FC9FF, all 0.3s)
+
 	.how_to
 		h3
 			@extend %reset_block
@@ -140,14 +149,14 @@ main
 			.content
 				color: #404040
 
-	.option
+	.doc
 		h3
 			@extend %reset_block
 			font-size: 1.5rem
 			line-height: 3rem
-
-		table
-			width: 100%
+		a
+			margin-left: 2rem
+			color: #7FC9FF
 
 footer
 	display: flex
