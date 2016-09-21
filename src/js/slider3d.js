@@ -126,10 +126,11 @@
 		// Axis function
 		//////////////////////////////////////////////////
 		initAxis(axis) {
-			if(axis !== "Y" && axis !== "X") {
+			var a = axis || "Y";
+			if(a !== "Y" && a !== "X") {
 				return console.log("axis is only \"X\" | \"Y\"");
 			}
-			this.axis = axis || "Y";
+			this.axis = a;
 		}
 		setAxis(axis) {
 			this.initAxis(axis);
@@ -149,10 +150,11 @@
 		// AxisRotateZ function
 		//////////////////////////////////////////////////
 		initAxisToRotateZ(deg) {
-			if(Object.prototype.toString.call(deg).slice(8, -1).toLowerCase() !== "number") {
+			var d = deg || 0;
+			if(Object.prototype.toString.call(d).slice(8, -1).toLowerCase() !== "number") {
 				return console.log("deg is not number");
 			}
-			this.rotate_z = deg || 0;
+			this.rotate_z = d;
 			this.rotate_z !== 0 ? this.reverse_rotate_z = this.rotate_z*(-1) : this.reverse_rotate_z = this.rotate_z;
 		}
 		setAxisToRotateZ(deg) {
@@ -177,10 +179,11 @@
 		// Distance function
 		//////////////////////////////////////////////////
 		initDistance(dist) {
-			if(dist < 0.0 || dist > 2.0) {
+			var d = dist || 1.2;
+			if(d < 0.0 || d > 2.0) {
 				return console.log("dist is only \"0.0 <= dist <= 2.0\"");
 			}
-			this.dist = dist || 1.2;
+			this.dist = d;
 			this.reverse_dist = 2.0 - this.dist;
 		}
 		setDistance(dist) {
