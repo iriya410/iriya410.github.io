@@ -1,10 +1,12 @@
 # Slider 3D
 
 
-
-### Variable
+###### Figure
 
 ![open-img](src/asset/illustration.png)
+
+
+### Variable
 
 | Name                | Type          | Description                                       |
 |---------------------|---------------|---------------------------------------------------|
@@ -25,3 +27,19 @@
 | slider_items        | element array | slide들의 집합                                    |
 | slider_items_length | number        | slide갯수                                         |
 | translate_z         | number        | perspective에 대한 slide들의 거리값               |
+
+
+### Function
+
+| Name                 | Parameter | Param Type | Description                                            |
+|----------------------|-----------|------------|--------------------------------------------------------|
+| initAxis             | axis      | string     | axis값을 검사 및 초기화                                |
+| initAxisToRotateZ    | deg       | number     | rotate_z값 검사 및 초기화와 reverse_rotate_z 값을 설정 |
+| initButton           |           |            | 내부 네비게이션 버튼 생성                              |
+| initDistance         | dist      | number     | dist값 검사 및 초기화와 reverse_dist 값을 설정         |
+| initSlider           | element   | element    | slider 생성                                            |
+| setAutoPlay          | ms        | number     | slider 자동 회전 설정                                  |
+| setAxis              | axis      | string     | axis값에 따른 slider방향 설정                          |
+| setAxisToRotateZ     | deg       | number     | deg값에 따라 slider의 z축을 기준으로 회전              |
+| setDistance          | dis       | number     | container로부터의 거리 설정                            |
+| setPerspectiveOrigin | value     | string     | 원근 투영 중심 설정                                    |
