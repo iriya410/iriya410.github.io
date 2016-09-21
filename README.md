@@ -4,6 +4,8 @@
 
 ### Variable
 
+![open-img](src/asset/illustration.png)
+
 | Name                | Type          | Description                                       |
 |---------------------|---------------|---------------------------------------------------|
 | axis                | string        | 슬라이더 배치의 기준이 되는 축                    |
